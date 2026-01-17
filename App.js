@@ -1,5 +1,18 @@
 import React, { useState } from 'react';
 
+
+// Bài tập 03.2: Flatlist
+// import BT3 from './components/BT3';
+
+// export default function App() {
+//   return <BT3 />;
+// }
+
+
+
+
+
+
 // Bài tập 03.1: Custom component
 import BT2 from './components/BT2';
 

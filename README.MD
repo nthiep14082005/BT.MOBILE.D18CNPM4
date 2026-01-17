@@ -8,3 +8,5 @@
 ## Kết quả chạy 
 ![Giao diện ứng dụng 1](./demo-1.jpg)
 ![Giao diện ứng dụng 2](./demo-2.jpg)
+![Bài tập 03.1: Custom component](./demo-3.jpg)
+![Bài tập 03.2: Flatlist](./demo-4.jpg)
