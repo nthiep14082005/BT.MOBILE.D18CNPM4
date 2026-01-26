@@ -1,12 +1,47 @@
 import React, { useState } from 'react';
 
 
-// Bài tập 03.2: Flatlist
-import BT3 from './components/BT3';
+
+// BT02: Hoàn thiện bài tập Core Components cuối buổi 2
+import BTLastCoreComponents from './components/BTLastCoreComponents';
 
 export default function App() {
-  return <BT3 />;
+  return <BTLastCoreComponents />;
 }
+
+
+
+
+
+// Bài tập 4.2: Styling
+// import BTStyling from './components/BTStyling';
+
+// export default function App() {
+//   return <BTStyling />;
+// }
+
+
+
+
+
+
+// // Bài tập 04: Button + onPress
+// import BTButton_onPress from './components/BTButton_onPress';
+
+// export default function App() {
+//   return <BTButton_onPress />;
+// }
+
+
+
+
+
+// // Bài tập 03.2: Flatlist
+// import BTFlatlist from './components/BTFlatlist';
+
+// export default function App() {
+//   return <BTFlatlist />;
+// }
 
 
 
@@ -14,10 +49,10 @@ export default function App() {
 
 
 // Bài tập 03.1: Custom component
-// import BT2 from './components/BT2';
+// import BTCustomcomponent from './components/BTCustomcomponent';
 
 // export default function App() {
-//   return <BT2 />;
+//   return <BTCustomcomponent />;
 // }
 
 
@@ -28,222 +63,9 @@ export default function App() {
 
 
 // Quay số điện thoại
-
-// import { 
-//   StyleSheet, 
-//   Text, 
-//   View, 
-//   TextInput, 
-//   TouchableOpacity, 
-//   KeyboardAvoidingView, 
-//   Platform, 
-//   StatusBar,
-//   TouchableWithoutFeedback,
-//   Keyboard,
-//   Alert,
-//   Dimensions // Import thêm Dimensions để tính toán nếu cần
-// } from 'react-native';
-
-// const STATUSBAR_HEIGHT = Platform.OS === 'ios' ? 54 : StatusBar.currentHeight; // 54 là chiều cao an toàn cho iPhone 14 Pro
-
+// Bài tập Core Components
+// import BTCoreComponents from './components/BTCoreComponents';
 
 // export default function App() {
-//   const [phoneNumber, setPhoneNumber] = useState('');
-//   const [isFocused, setIsFocused] = useState(false);
-//   const isValid = phoneNumber.length >= 9;
-
-//   const handlePress = () => {
-//     Alert.alert("Thông báo", `Đăng nhập với số: ${phoneNumber}`);
-//   };
-
-//   return (
-//     <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
-//       {/* 1. Thay SafeAreaView bằng View thường */}
-//       <View style={styles.container}>
-//         <StatusBar barStyle="dark-content" backgroundColor="transparent" translucent />
-
-//         {/* 2. Header: Nút Back và Tiêu đề */}
-//         <View style={styles.header}>
-//           <TouchableOpacity style={styles.iconButton}>
-//             <Text style={styles.iconText}>✕</Text> 
-//           </TouchableOpacity>
-//           <Text style={styles.headerTitle}>Đăng nhập</Text>
-//           <View style={{ width: 40 }} /> 
-//         </View>
-
-//         {/* 3. Body */}
-//         <View style={styles.body}>
-//           <Text style={styles.title}>Nhập số điện thoại</Text>
-//           <Text style={styles.description}>
-//             Dùng số điện thoại để đăng nhập hoặc đăng ký tài khoản tại OneHousing Pro
-//           </Text>
-
-//           <View style={[
-//             styles.inputContainer, 
-//             isFocused && styles.inputContainerFocused
-//           ]}>
-//             <TextInput
-//               style={styles.input}
-//               placeholder="Nhập số điện thoại của bạn"
-//               placeholderTextColor="#A0A0A0"
-//               keyboardType="numeric"
-//               value={phoneNumber}
-//               onChangeText={setPhoneNumber}
-//               onFocus={() => setIsFocused(true)}
-//               onBlur={() => setIsFocused(false)}
-//               autoFocus={true}
-//               selectionColor="#2D9CDB"
-//             />
-//             {phoneNumber.length > 0 && (
-//               <TouchableOpacity onPress={() => setPhoneNumber('')}>
-//                 <View style={styles.clearBtn}>
-//                   <Text style={styles.clearBtnText}>✕</Text>
-//                 </View>
-//               </TouchableOpacity>
-//             )}
-//           </View>
-//         </View>
-
-//         {/* 4. Footer */}
-//         <KeyboardAvoidingView 
-//           behavior={Platform.OS === "ios" ? "padding" : "height"}
-//           style={styles.footer}
-//           // Tinh chỉnh offset để nút không bị dính sát bàn phím quá
-//           keyboardVerticalOffset={Platform.OS === "ios" ? 10 : 0}
-//         >
-//           <TouchableOpacity 
-//             style={[styles.button, !isValid && styles.buttonDisabled]} 
-//             disabled={!isValid}
-//             onPress={handlePress}
-//           >
-//             <Text style={[styles.buttonText, !isValid && styles.buttonTextDisabled]}>
-//               Tiếp tục
-//             </Text>
-//           </TouchableOpacity>
-//         </KeyboardAvoidingView>
-
-//       </View>
-//     </TouchableWithoutFeedback>
-//   );
+//   return <BTCoreComponents />;
 // }
-
-// const styles = StyleSheet.create({
-//   container: {
-//     flex: 1,
-//     backgroundColor: '#FFFFFF',
-//     // TỰ TẠO SAFE AREA:
-//     // Cộng thêm khoảng cách ở trên đầu để tránh Tai thỏ / Dynamic Island
-//     paddingTop: STATUSBAR_HEIGHT, 
-//     // Cộng thêm khoảng cách ở dưới đáy để tránh thanh gạt Home (Home Indicator)
-//     paddingBottom: Platform.OS === 'ios' ? 20 : 0, 
-//   },
-  
-//   header: {
-//     flexDirection: 'row',
-//     alignItems: 'center',
-//     justifyContent: 'space-between',
-//     paddingHorizontal: 16,
-//     // Giảm height header đi một chút vì đã có padding top lớn ở container
-//     height: 50, 
-//     marginTop: 10, 
-//   },
-//   iconButton: {
-//     width: 40,
-//     height: 40,
-//     justifyContent: 'center',
-//     alignItems: 'flex-start',
-//   },
-//   iconText: {
-//     fontSize: 24,
-//     color: '#1A1A1A',
-//     fontWeight: '300',
-//   },
-//   headerTitle: {
-//     fontSize: 17,
-//     fontWeight: '600',
-//     color: '#1A1A1A',
-//   },
-
-//   body: {
-//     paddingHorizontal: 24,
-//     paddingTop: 20, // Giảm top xuống xíu cho cân đối
-//     flex: 1,
-//   },
-//   title: {
-//     fontSize: 26, 
-//     fontWeight: '700',
-//     color: '#1A1A1A',
-//     marginBottom: 12,
-//     letterSpacing: 0.5,
-//   },
-//   description: {
-//     fontSize: 15,
-//     color: '#666666',
-//     lineHeight: 22,
-//     marginBottom: 30,
-//   },
-  
-//   inputContainer: {
-//     flexDirection: 'row',
-//     alignItems: 'center',
-//     borderBottomWidth: 1,
-//     borderBottomColor: '#E0E0E0', 
-//     paddingVertical: 10,
-//   },
-//   inputContainerFocused: {
-//     borderBottomColor: '#2D9CDB', 
-//     borderBottomWidth: 2,
-//   },
-//   input: {
-//     flex: 1,
-//     fontSize: 18,
-//     color: '#1A1A1A',
-//     paddingVertical: 5,
-//     fontWeight: '500',
-//   },
-//   clearBtn: {
-//     backgroundColor: '#E0E0E0',
-//     width: 20,
-//     height: 20,
-//     borderRadius: 10,
-//     justifyContent: 'center',
-//     alignItems: 'center',
-//     marginLeft: 10,
-//   },
-//   clearBtnText: {
-//     fontSize: 10,
-//     color: '#fff',
-//     fontWeight: 'bold',
-//   },
-
-//   footer: {
-//     paddingHorizontal: 24,
-//     paddingBottom: 20, 
-//     justifyContent: 'flex-end',
-//   },
-//   button: {
-//     backgroundColor: '#2D9CDB', 
-//     paddingVertical: 16,
-//     borderRadius: 12, 
-//     alignItems: 'center',
-//     justifyContent: 'center',
-//     shadowColor: "#2D9CDB", 
-//     shadowOffset: { width: 0, height: 4 },
-//     shadowOpacity: 0.2,
-//     shadowRadius: 5,
-//     elevation: 5, 
-//   },
-//   buttonDisabled: {
-//     backgroundColor: '#F2F2F2', 
-//     shadowOpacity: 0,
-//     elevation: 0,
-//   },
-//   buttonText: {
-//     color: '#FFFFFF',
-//     fontSize: 16,
-//     fontWeight: '600',
-//   },
-//   buttonTextDisabled: {
-//     color: '#BDBDBD',
-//   },
-// });
