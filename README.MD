@@ -18,10 +18,10 @@
 ### Bài tập 03.2: FlatList
 <img src="./demo-4.jpg" width="300" />
 
-### Bài tập 04: Button + onPress
+### Bài tập 04: Capturing Taps
 <img src="./demo-5.jpg" width="300" />
 
-### Bài tập 04: Button + onPress
+### Bài tập 04: Capturing Taps
 <img src="./demo-6.jpg" width="300" />
 
 ### Bài tập 4.2: Styling

@@ -25,11 +25,11 @@ export default function App() {
 
 
 
-// // Bài tập 04: Button + onPress
-// import BTButton_onPress from './components/BTButton_onPress';
+// // Bài tập 04: Capturing Taps
+// import BTCapturingTaps from './components/BTCapturingTaps';
 
 // export default function App() {
-//   return <BTButton_onPress />;
+//   return <BTCapturingTaps />;
 // }
 
 
