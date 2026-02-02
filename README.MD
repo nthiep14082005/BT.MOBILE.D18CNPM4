@@ -15,4 +15,5 @@
 | Bài tập 04: Capturing Taps | <img src="./demo-5.jpg" width="200" /> | <img src="./demo-6.jpg" width="200" /> |  |  |  |  |  |
 | Bài tập 4.2: Styling | <img src="./demo-7.jpg" width="200" /> |  |  |  |  |  |  |
 | **BT02: Hoàn thiện Core Components cuối buổi 2** | <img src="./demo-8.jpg" width="200" /> | <img src="./demo-9.jpg" width="200" /> | <img src="./demo-10.jpg" width="200" /> |  |  |  |  |
-| **Bài tập Sử dụng State** | <img src="./state1.jpg" width="200" /> | <img src="./state2.jpg" width="200" /> | <img src="./state3.jpg" width="200" /> | <img src="./state4.jpg" width="200" /> | <img src="./state5.jpg" width="200" /> | <img src="./state6.jpg" width="200" /> | <video src="./statedemo.mp4" width="200" controls></video> |
+| **Bài tập Sử dụng State** | <img src="./state1.jpg" width="200" /> | <img src="./state2.jpg" width="200" /> | <img src="./state3.jpg" width="200" /> | <img src="./state4.jpg" width="200" /> | <img src="./state5.jpg" width="200" /> | <img src="./state6.jpg" width="200" /> | <img src="./state-demo.gif" width="200" />
+ |
