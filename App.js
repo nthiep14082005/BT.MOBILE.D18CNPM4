@@ -2,12 +2,24 @@ import React, { useState } from 'react';
 
 
 
-// BT02: Hoàn thiện bài tập Core Components cuối buổi 2
-import BTLastCoreComponents from './components/BTLastCoreComponents';
+// BT 5.2 : State.js
+import BTState from './components//BTState';
 
 export default function App() {
-  return <BTLastCoreComponents />;
+  return <BTState />;
 }
+
+
+
+
+
+
+// BT02: Hoàn thiện bài tập Core Components cuối buổi 2
+// import BTLastCoreComponents from './components/BTLastCoreComponents';
+
+// export default function App() {
+//   return <BTLastCoreComponents />;
+// }
 
 
 
